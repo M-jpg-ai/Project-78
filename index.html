@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: cadetblue;">
+    <center>
+    <img id="pic" src="download.png" style="height: 400px; width: 600px;"> 
+    <h4 id="family_names">Family</h4>
+    <button onclick="update()">Next</button>
+    </center>
+    <script>
+        var img=["download.png","mom.png","dad.jpg","Grand Father.png","grand mother.png",
+                    "siblings.jpg","uncle.jpg","aunt.png"];
+        var names =["Family","Mother","Father","Grand Father","Grand Mother","Siblings","Uncle","Aunt"] ;
+
+        var i = 0;
+        function update(){
+            i++;
+
+            var updated_img=img[i];
+            var updated_name = names[i];
+            document.getElementById("pic").src=updated_img;
+            document.getElementById("family_names").innerHTML=updated_name;
+            
+          i();
+           
+        }
+      function i (){
+        var members = 8 ;
+        if (i=members){
+               i=0;
+           }
+      }
+    </script>
+</body>
+</html>
