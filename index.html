@@ -19,22 +19,20 @@
 
         var i = 0;
         function update(){
-            i++;
+           
 
             var updated_img=img[i];
             var updated_name = names[i];
             document.getElementById("pic").src=updated_img;
             document.getElementById("family_names").innerHTML=updated_name;
-            
-          i();
+            i++;
+          
+        if (i==8){
+               i=0;
            
         }
-      function i (){
-        var members = 8 ;
-        if (i=members){
-               i=0;
-           }
-      }
+        }
+      
     </script>
 </body>
 </html>
